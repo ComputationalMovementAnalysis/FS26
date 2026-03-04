@@ -22,6 +22,7 @@ format:
     number-sections: false
     code-tools:
       source: false
+    link-external-newwindow: true
 
 
 execute:
