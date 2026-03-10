@@ -380,11 +380,6 @@ div.csl-indent {
   <a href="../Week1/2_tasks_and_inputs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tasks and inputs</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Week1/3_solutions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Solutions</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -414,11 +409,6 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Week2/3_exercise_c.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercise C</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../Week2/4_solutions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Solutions</span></a>
   </div>
 </li>
       </ul>
@@ -662,7 +652,7 @@ div.csl-indent {
 </section>
 <section id="task-4-segment-based-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="task-4-segment-based-analysis">Task 4: Segment-based analysis</h3>
-<p>In applying <span class="citation" data-cites="laube2011">Laube and Purves (<a href="../90_references.html#ref-laube2011" role="doc-biblioref">2011</a>)</span>, we’ve come as far as step b) in <a href="1_input.html#fig-laubeimg" class="quarto-xref">Figure&nbsp;<span>16.1</span></a>. In order to complete the last steps (c and d), we need a <em>unique</em> ID for each segment that we can use as a grouping variable. The following function does just that (it assigns unique IDs based on the column <code>static</code> which you created in Task 2). You will learn about functions next week. For now, just copy the following code chunk into your script and run it.</p>
+<p>In applying <span class="citation" data-cites="laube2011">Laube and Purves (<a href="../90_references.html#ref-laube2011" role="doc-biblioref">2011</a>)</span>, we’ve come as far as step b) in <a href="1_input.html#fig-laubeimg" class="quarto-xref">Figure&nbsp;<span>14.1</span></a>. In order to complete the last steps (c and d), we need a <em>unique</em> ID for each segment that we can use as a grouping variable. The following function does just that (it assigns unique IDs based on the column <code>static</code> which you created in Task 2). You will learn about functions next week. For now, just copy the following code chunk into your script and run it.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>rle_id <span class="ot">&lt;-</span> <span class="cf">function</span>(vec) {</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    x <span class="ot">&lt;-</span> <span class="fu">rle</span>(vec)<span class="sc">$</span>lengths</span>
