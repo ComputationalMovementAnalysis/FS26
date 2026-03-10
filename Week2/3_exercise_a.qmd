@@ -157,7 +157,7 @@ wildschwein_sample_line <- wildschwein_sample |>
   summarise(do_union = FALSE) |> 
   st_cast("LINESTRING")
 
-tmap_options(basemaps = "OpenStreetMap")
+tmap_options(basemap.server = "OpenStreetMap")
 
 tm_shape(wildschwein_sample_line) +
   tm_lines() +
