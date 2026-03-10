@@ -2,7 +2,7 @@
 
 ### Task 1: Similarity measures 
 
-We will now calculate similarties between trajectories using a new dataset pedestrian.csv (available on moodle). Download an import this dataset as a `data.frame` or `tibble`. It it a set of six different but similar trajectories from pedestrians walking on a path. 
+We will now calculate similarities between trajectories using a new dataset pedestrian.csv (available on moodle). Download an import this dataset as a `data.frame` or `tibble`. It it a set of six different but similar trajectories from pedestrians walking on a path. 
 
 For this task, explore the trajectories first and get an idea on how the pedestrians moved. 
 
@@ -27,7 +27,7 @@ Commit your changes with a meaningful commit message.
 
 Install the package `SimilarityMeasures` (`install.packages("SimilarityMeasures")`). Familiarize yourself with this package by skimming through the function descriptions `help(package = "SimilarityMeasures")`. Now compare trajectory 1 to trajectories 2-6 using different similarity measures from the package. Your options are. `DTW`, `EditDist`, `Frechet` and `LCSS`.
 
-Before visualizing your results think about the following: Which two trajectories to you percieve to be most similar, which are most dissimilar? Now visualize the results from the computed similarity measures. Which measure reflects your own intuition the closest? 
+Before visualizing your results think about the following: Which two trajectories to you perceive to be most similar, which are most dissimilar? Now visualize the results from the computed similarity measures. Which measure reflects your own intuition the closest? 
 
 Note: 
 
