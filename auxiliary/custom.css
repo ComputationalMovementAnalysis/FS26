@@ -11,3 +11,8 @@ table{
     text-align: left;
   }
   
+
+  /* to hide copy-pasted revealjs speaker notes */
+.notes{
+    display: none;
+  }

@@ -369,7 +369,139 @@
     "href": "Week3/4_exercise_C.html",
     "title": "Exercise C: Quarto",
     "section": "",
-    "text": "Use the dataset Game of Thrones (on moodle), and do the exercises in sections 4 Quarto, 5 Quarto Advanced and 6 Publishing HTML / Websites from the slides.\nSubmit the URL of your published analysis via moodle.",
+    "text": "Literate Programing Exercise 🛠️\nThese exercises are indentical with ones shown during class. If you followed along there you’re all done!\nSubmit the URL of your published analysis via moodle.\nMake your R-Script literate",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#literate-programing-exercise",
+    "href": "Week3/4_exercise_C.html#literate-programing-exercise",
+    "title": "Exercise C: Quarto",
+    "section": "",
+    "text": "Download the Folder GOT.zip from moodle (Game of Thrones Dataset)\nUnzip the File in a reasonable location\nOpen the .RProj File with RStudio\nRun the RScript got-1.R and try to undestand what is happening\nMake the R-Script literate by explaining to human beings what we want a computer to do",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-exercise-1",
+    "href": "Week3/4_exercise_C.html#quarto-exercise-1",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Exercise 1 🛠️",
+    "text": "Quarto Exercise 1 🛠️\n\nCheck if quarto is installed by running the following command in your terminal:\nquarto --version\ninstall quarto if necessary (➲ quarto.org)",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-exercise-2",
+    "href": "Week3/4_exercise_C.html#quarto-exercise-2",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Exercise 2 🛠️",
+    "text": "Quarto Exercise 2 🛠️\n\nCreate a new Quarto file\n\nRemove the checkbox Use visual markdown editor\nClick on Create empty document\n\nSave as got-2.qmd\nWrite some prose on the analysis done in got-1.R (no R code yet)\nRender the file to html by running the following code in your terminal\nquarto render got-2.qmd",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-advanced-exercise-1",
+    "href": "Week3/4_exercise_C.html#quarto-advanced-exercise-1",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 1 🛠️",
+    "text": "Quarto Advanced Exercise 1 🛠️\n\nInsert one of the images included in your folder into your document\n(quarto.org → Guide → Authoring → Figures)",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-advanced-exercise-2",
+    "href": "Week3/4_exercise_C.html#quarto-advanced-exercise-2",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 2 🛠️",
+    "text": "Quarto Advanced Exercise 2 🛠️\n\nInsert an cross-reference to this image. E.G: see Figure 13.1\n(quarto.org → Guide → Authoring → Scholarly Writing → Cross-References)\n\n\n\n\n\n\n\n\nFigure 13.1: The coat of arms of House Baratheon from A Song of Ice and Fire\n\n\n\n\n\n\nFor a cross-reference, the element to which you want to refer needs an ID\nThis is set in {} and begins with #, for images # is followed by a fig. e.g:\n![The coat of arms of the House of Baratheon...](images/baratheon.png){#fig-baratheon}\nTo refer to the image, use @fig-baratheon",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#sec-uebung-quarto-featuers-2",
+    "href": "Week3/4_exercise_C.html#sec-uebung-quarto-featuers-2",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 3 🛠️",
+    "text": "Quarto Advanced Exercise 3 🛠️\n\nInsert a crossreference to a chapter eg see Quarto Advanced Exercise 3 🛠️\n(quarto.org → Guide → Authoring → Scholarly Writing → Cross-References)\n\n\n\nChapter references get a {#sec-}\nChapters are (currently) only referenced with numbers\n\nin the YAML header set: number-sections: true\nSee this open issue https://github.com/quarto-dev/quarto-cli/issues/1196",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-advanced-exercise-4",
+    "href": "Week3/4_exercise_C.html#quarto-advanced-exercise-4",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 4 🛠",
+    "text": "Quarto Advanced Exercise 4 🛠\n\nIn Quarto, figures can consist of subfigures\nSee: quarto.org → Guide → Authoring → Figures → Subfigures\nCreates a subfigure layout similar to the following:\n\n\n\n\n\n\n\n\n\n\n\n\n(a) House Baratheon\n\n\n\n\n\n\n\n\n\n\n\n(b) House Baylish\n\n\n\n\n\n\n\n\n\n\n\n(c) House Arryn\n\n\n\n\n\n\n\n\n\n\n\n(d) House Bolton\n\n\n\n\n\n\n\nFigure 13.2: A collection of different coats of arms from the book ‘A song of Ice and Fire’, created by dezzzart published on deviantart.com",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-advanced-exercise-5",
+    "href": "Week3/4_exercise_C.html#quarto-advanced-exercise-5",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 5 🛠",
+    "text": "Quarto Advanced Exercise 5 🛠\n\nAdd a caption and a cross reference to your ggplot-figure",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-advanced-exercise-6",
+    "href": "Week3/4_exercise_C.html#quarto-advanced-exercise-6",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 6 🛠",
+    "text": "Quarto Advanced Exercise 6 🛠\n\nDisplay a table with the top 10 characters in regard to screentime, displaying only the columns name, screentime and episodes.\nReference this table in your text\nAdd a caption to your table\nquarto.org → Guide → Authoring → Tables → Cross References\nHint: use knitr::kable()",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-advanced-exercise-7",
+    "href": "Week3/4_exercise_C.html#quarto-advanced-exercise-7",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 7 🛠",
+    "text": "Quarto Advanced Exercise 7 🛠\n\nAdd a (dummy) abstract\nMake sure this abstract is not numbered and not in the TOC\nquarto.org → Guide → Documents → HTML → HTML Basics",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#quarto-advanced-exercise-8",
+    "href": "Week3/4_exercise_C.html#quarto-advanced-exercise-8",
+    "title": "Exercise C: Quarto",
+    "section": "Quarto Advanced Exercise 8 🛠",
+    "text": "Quarto Advanced Exercise 8 🛠\nLet’s add a citation!\n\nGot to scholar.google.com\nGet the bibtex entry of a scientific paper\nCreate a new text file named bibliography.bib\nAdd the bibtex entry to this file\nInclude the file in the YAML header: bibliography: bibliography.bib\nNow you can reference this entry using:\n\n@knuth1984 for Knuth (1984)\n[see @knuth1984] for (see Knuth 1984)\n\n\n\n\nFor more information see quarto.org → Guide → Authoring → Scholarly Writing → Citations\nTo include Zotero, see quarto.org → Guide → Tools → RStudio IDE → Visual Editor → Technical Writing → Citations → Citations from Zotero\n\n\ncontent",
+    "crumbs": [
+      "Week 3",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "Week3/4_exercise_C.html#publish-html-with-quartopub",
+    "href": "Week3/4_exercise_C.html#publish-html-with-quartopub",
+    "title": "Exercise C: Quarto",
+    "section": "Publish HTML with QuartoPub 🛠️",
+    "text": "Publish HTML with QuartoPub 🛠️\n\nCreate a new account on quartopub.com\nRun the following command in your terminal:\nquarto publish got-2.qmd\nChoose Quarto Pub as the destination.\n\n\n\n\n\nKnuth, Donald Ervin. 1984. “Literate Programming.” The Computer Journal 27 (2): 97–111.",
     "crumbs": [
       "Week 3",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Exercise C: Quarto</span>"
@@ -490,7 +622,7 @@
     "href": "90_references.html",
     "title": "References",
     "section": "",
-    "text": "Bryan, Jenny, and Jim Heister. 2021. Happy Git and GitHub for the\nuseR. https://happygitwithr.com/.\n\n\nChacon, Scott, and Ben Straub. 2014. Pro Git. 2nd Edition.\nApress. https://git-scm.com/book/en/v2.\n\n\nHägerstraand, Torsten. 1970. “What about People in Regional\nScience?” Papers in Regional Science 24 (1): 7–24.\n\n\nLaube, Patrick, and Ross S. Purves. 2011. “How Fast Is a Cow?\nCross - Scale Analysis of Movement Data.” Transactions in\nGIS 15 (3): 401–18. https://doi.org/10.1111/j.1467-9671.2011.01256.x.\n\n\nRodrigues, Bruno. 2023. Building Reproducible Analytical Pipelines\nwith r. Leanpub.\n\n\nVlachos, Michail, Dimitrios Gunopoulos, and George Kollios. 2002.\n“Discovering Similar Multidimensional Trajectories.”\nProceedings of the 18th International Conference on Data\nEngineering (Washington, DC, USA), ICDE ’02, 673–73. http://dl.acm.org/citation.cfm?id=876875.878994.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023.\nR for Data Science. \" O’Reilly Media, Inc.\".",
+    "text": "Bryan, Jenny, and Jim Heister. 2021. Happy Git and GitHub for the\nuseR. https://happygitwithr.com/.\n\n\nChacon, Scott, and Ben Straub. 2014. Pro Git. 2nd Edition.\nApress. https://git-scm.com/book/en/v2.\n\n\nHägerstraand, Torsten. 1970. “What about People in Regional\nScience?” Papers in Regional Science 24 (1): 7–24.\n\n\nKnuth, Donald Ervin. 1984. “Literate Programming.” The\nComputer Journal 27 (2): 97–111.\n\n\nLaube, Patrick, and Ross S. Purves. 2011. “How Fast Is a Cow?\nCross - Scale Analysis of Movement Data.” Transactions in\nGIS 15 (3): 401–18. https://doi.org/10.1111/j.1467-9671.2011.01256.x.\n\n\nRodrigues, Bruno. 2023. Building Reproducible Analytical Pipelines\nwith r. Leanpub.\n\n\nVlachos, Michail, Dimitrios Gunopoulos, and George Kollios. 2002.\n“Discovering Similar Multidimensional Trajectories.”\nProceedings of the 18th International Conference on Data\nEngineering (Washington, DC, USA), ICDE ’02, 673–73. http://dl.acm.org/citation.cfm?id=876875.878994.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023.\nR for Data Science. \" O’Reilly Media, Inc.\".",
     "crumbs": [
       "<span class='chapter-number'>23</span>  <span class='chapter-title'>References</span>"
     ]

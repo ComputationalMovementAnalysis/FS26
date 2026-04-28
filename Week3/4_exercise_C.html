@@ -23,7 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -489,8 +543,25 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#literate-programing-exercise" id="toc-literate-programing-exercise" class="nav-link active" data-scroll-target="#literate-programing-exercise">Literate Programing Exercise 🛠️</a></li>
+  <li><a href="#quarto-exercise-1" id="toc-quarto-exercise-1" class="nav-link" data-scroll-target="#quarto-exercise-1">Quarto Exercise 1 🛠️</a></li>
+  <li><a href="#quarto-exercise-2" id="toc-quarto-exercise-2" class="nav-link" data-scroll-target="#quarto-exercise-2">Quarto Exercise 2 🛠️</a></li>
+  <li><a href="#quarto-advanced-exercise-1" id="toc-quarto-advanced-exercise-1" class="nav-link" data-scroll-target="#quarto-advanced-exercise-1">Quarto Advanced Exercise 1 🛠️</a></li>
+  <li><a href="#quarto-advanced-exercise-2" id="toc-quarto-advanced-exercise-2" class="nav-link" data-scroll-target="#quarto-advanced-exercise-2">Quarto Advanced Exercise 2 🛠️</a></li>
+  <li><a href="#sec-uebung-quarto-featuers-2" id="toc-sec-uebung-quarto-featuers-2" class="nav-link" data-scroll-target="#sec-uebung-quarto-featuers-2">Quarto Advanced Exercise 3 🛠️</a></li>
+  <li><a href="#quarto-advanced-exercise-4" id="toc-quarto-advanced-exercise-4" class="nav-link" data-scroll-target="#quarto-advanced-exercise-4">Quarto Advanced Exercise 4 🛠</a></li>
+  <li><a href="#quarto-advanced-exercise-5" id="toc-quarto-advanced-exercise-5" class="nav-link" data-scroll-target="#quarto-advanced-exercise-5">Quarto Advanced Exercise 5 🛠</a></li>
+  <li><a href="#quarto-advanced-exercise-6" id="toc-quarto-advanced-exercise-6" class="nav-link" data-scroll-target="#quarto-advanced-exercise-6">Quarto Advanced Exercise 6 🛠</a></li>
+  <li><a href="#quarto-advanced-exercise-7" id="toc-quarto-advanced-exercise-7" class="nav-link" data-scroll-target="#quarto-advanced-exercise-7">Quarto Advanced Exercise 7 🛠</a></li>
+  <li><a href="#quarto-advanced-exercise-8" id="toc-quarto-advanced-exercise-8" class="nav-link" data-scroll-target="#quarto-advanced-exercise-8">Quarto Advanced Exercise 8 🛠</a></li>
+  <li><a href="#publish-html-with-quartopub" id="toc-publish-html-with-quartopub" class="nav-link" data-scroll-target="#publish-html-with-quartopub">Publish HTML with QuartoPub 🛠️</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ComputationalMovementAnalysis/FS24/edit/main/Week3/4_exercise_C.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -515,10 +586,223 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Use the dataset <em>Game of Thrones</em> (on moodle), and do the exercises in sections <em>4 Quarto</em>, <em>5 Quarto Advanced</em> and <em>6 Publishing HTML / Websites</em> from <a href="https://computationalmovementanalysis.github.io/Reproducible-and-Visible">the slides</a>.</p>
+<p>These exercises are indentical with ones shown <a href="https://computationalmovementanalysis.github.io/Reproducible-and-Visible">during class</a>. If you followed along there you’re all done!</p>
 <p>Submit the URL of your published analysis via moodle.</p>
+<section id="literate-programing-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="literate-programing-exercise">Literate Programing Exercise 🛠️</h2>
+<p><em>Make your R-Script literate</em></p>
+<ol type="1">
+<li>Download the Folder <code>GOT.zip</code> from moodle (<em>Game of Thrones Dataset</em>)</li>
+<li>Unzip the File in a reasonable location</li>
+<li>Open the .RProj File with RStudio</li>
+<li>Run the RScript got-1.R and try to undestand what is happening</li>
+<li>Make the R-Script literate by <em>explaining to human beings what we want a computer to do</em></li>
+</ol>
+</section>
+<section id="quarto-exercise-1" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-exercise-1">Quarto Exercise 1 🛠️</h2>
+<ol type="1">
+<li><p>Check if quarto is installed by running the following command <em>in your terminal</em>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>install quarto if necessary (➲ <a href="https://quarto.org">quarto.org</a>)</p></li>
+</ol>
+</section>
+<section id="quarto-exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-exercise-2">Quarto Exercise 2 🛠️</h2>
+<ol type="1">
+<li><p>Create a new Quarto file</p>
+<ul>
+<li>Remove the checkbox <em>Use visual markdown editor</em></li>
+<li>Click on <em>Create empty document</em></li>
+</ul></li>
+<li><p>Save as <code>got-2.qmd</code></p></li>
+<li><p>Write some prose on the analysis done in <code>got-1.R</code> (no R code yet)</p></li>
+<li><p>Render the file to html by running the following code <em>in your terminal</em></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render got-2.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</section>
+<section id="quarto-advanced-exercise-1" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-advanced-exercise-1">Quarto Advanced Exercise 1 🛠️</h2>
+<ul>
+<li>Insert one of the images included in your folder into your document</li>
+<li>(<a href="https://quarto.org/docs/authoring/figures.html">quarto.org</a> → Guide → Authoring → Figures)</li>
+</ul>
+</section>
+<section id="quarto-advanced-exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-advanced-exercise-2">Quarto Advanced Exercise 2 🛠️</h2>
+<ul>
+<li>Insert an cross-reference to this image. E.G: <em>see <a href="#fig-baratheon-0" class="quarto-xref">Figure&nbsp;<span>13.1</span></a></em></li>
+<li>(<a href="https://quarto.org/docs/authoring/cross-references.html">quarto.org</a> → Guide → Authoring → Scholarly Writing → Cross-References)</li>
+</ul>
+<div>
+<div id="fig-baratheon-0" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-baratheon-0-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/baratheon.png" class="img-fluid figure-img" width="100">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-baratheon-0-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.1: The coat of arms of House Baratheon from <em>A Song of Ice and Fire</em>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="notes">
+<ul>
+<li><p>For a cross-reference, the element to which you want to refer needs an ID</p></li>
+<li><p>This is set in {} and begins with #, for images # is followed by a fig.&nbsp;e.g:</p>
+<p><code>![The coat of arms of the House of Baratheon...](images/baratheon.png){#fig-baratheon}</code></p></li>
+<li><p>To refer to the image, use <code>@fig-baratheon</code></p></li>
+</ul>
+</div>
+</section>
+<section id="sec-uebung-quarto-featuers-2" class="level2">
+<h2 class="anchored" data-anchor-id="sec-uebung-quarto-featuers-2">Quarto Advanced Exercise 3 🛠️</h2>
+<ul>
+<li>Insert a crossreference to a chapter eg <em>see <a href="#sec-uebung-quarto-featuers-2" class="quarto-xref"><span>Quarto Advanced Exercise 3 🛠️</span></a></em></li>
+<li>(<a href="https://quarto.org/docs/authoring/cross-references.html">quarto.org</a> → Guide → Authoring → Scholarly Writing → Cross-References)</li>
+</ul>
+<div class="notes">
+<ul>
+<li>Chapter references get a <code>{#sec-}</code></li>
+<li>Chapters are (currently) only referenced with <em>numbers</em>
+<ul>
+<li>in the YAML header set: <code>number-sections: true</code></li>
+<li>See this open issue <a href="https://github.com/quarto-dev/quarto-cli/issues/1196" class="uri">https://github.com/quarto-dev/quarto-cli/issues/1196</a></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="quarto-advanced-exercise-4" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-advanced-exercise-4">Quarto Advanced Exercise 4 🛠</h2>
+<ul>
+<li>In Quarto, <em>figures</em> can consist of <em>subfigures</em></li>
+<li>See: <a href="https://quarto.org/docs/authoring/figures.html#subfigures">quarto.org</a> → Guide → Authoring → Figures → Subfigures</li>
+<li>Creates a subfigure layout similar to the following:</li>
+</ul>
+<div id="fig-houses" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-houses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-houses" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div id="fig-barathon" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-barathon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/baratheon.png" class="img-fluid figure-img" data-ref-parent="fig-houses">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-barathon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) House Baratheon
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-houses" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div id="fig-baylish" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-baylish-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/baylish.png" class="img-fluid figure-img" data-ref-parent="fig-houses">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-baylish-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) House Baylish
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-houses" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div id="fig-arryn" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-arryn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/arryn.png" class="img-fluid figure-img" data-ref-parent="fig-houses">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-arryn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) House Arryn
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-houses" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div id="fig-bolton" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-bolton-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bolton.png" class="img-fluid figure-img" data-ref-parent="fig-houses">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-bolton-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) House Bolton
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-houses-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13.2: A collection of different coats of arms from the book ‘<em>A song of Ice and Fire</em>’, created by <em>dezzzart</em> published on <a href="https://www.deviantart.com/dezzzart">deviantart.com</a>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="quarto-advanced-exercise-5" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-advanced-exercise-5">Quarto Advanced Exercise 5 🛠</h2>
+<ul>
+<li>Add a caption and a cross reference to your <code>ggplot</code>-figure</li>
+</ul>
+</section>
+<section id="quarto-advanced-exercise-6" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-advanced-exercise-6">Quarto Advanced Exercise 6 🛠</h2>
+<ul>
+<li>Display a table with the top 10 characters in regard to screentime, displaying only the columns <code>name</code>, <code>screentime</code> and <code>episodes</code>.</li>
+<li>Reference this table in your text</li>
+<li>Add a caption to your table</li>
+<li><a href="https://quarto.org/docs/authoring/tables.html#cross-references">quarto.org</a> → Guide → Authoring → Tables → Cross References</li>
+<li>Hint: use <code>knitr::kable()</code></li>
+</ul>
+</section>
+<section id="quarto-advanced-exercise-7" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-advanced-exercise-7">Quarto Advanced Exercise 7 🛠</h2>
+<ul>
+<li>Add a (dummy) abstract</li>
+<li>Make sure this abstract is not numbered and not in the TOC</li>
+<li><a href="https://quarto.org/docs/output-formats/html-basics.html#table-of-contents">quarto.org</a> → Guide → Documents → HTML → HTML Basics</li>
+</ul>
+</section>
+<section id="quarto-advanced-exercise-8" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-advanced-exercise-8">Quarto Advanced Exercise 8 🛠</h2>
+<p>Let’s add a citation!</p>
+<ol type="1">
+<li>Got to <a href="https://scholar.google.com/">scholar.google.com</a></li>
+<li>Get the bibtex entry of a scientific paper</li>
+<li>Create a new text file named <code>bibliography.bib</code></li>
+<li>Add the bibtex entry to this file</li>
+<li>Include the file in the YAML header: <code>bibliography: bibliography.bib</code></li>
+<li>Now you can reference this entry using:
+<ul>
+<li><code>@knuth1984</code> for <em><span class="citation" data-cites="knuth1984">Knuth (<a href="../90_references.html#ref-knuth1984" role="doc-biblioref">1984</a>)</span></em></li>
+<li><code>[see @knuth1984]</code> for <em><span class="citation" data-cites="knuth1984">(see <a href="../90_references.html#ref-knuth1984" role="doc-biblioref">Knuth 1984</a>)</span></em></li>
+</ul></li>
+</ol>
+<hr>
+<ul>
+<li>For more information see <a href="https://quarto.org/docs/authoring/citations.html">quarto.org</a> → Guide → Authoring → Scholarly Writing → Citations</li>
+<li>To include Zotero, see <a href="https://quarto.org/docs/visual-editor/technical.html#citations-from-zotero">quarto.org</a> → Guide → Tools → RStudio IDE → Visual Editor → Technical Writing → Citations → Citations from Zotero</li>
+</ul>
+<div class="notes">
+<p>content</p>
+</div>
+</section>
+<section id="publish-html-with-quartopub" class="level2">
+<h2 class="anchored" data-anchor-id="publish-html-with-quartopub">Publish HTML with QuartoPub 🛠️</h2>
+<ul>
+<li><p>Create a new account on <a href="https://quartopub.com/">quartopub.com</a></p></li>
+<li><p>Run the following command in your terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish got-2.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Choose <code>Quarto Pub</code> as the destination.</p></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-knuth1984" class="csl-entry" role="listitem">
+Knuth, Donald Ervin. 1984. <span>“Literate Programming.”</span> <em>The Computer Journal</em> 27 (2): 97–111.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1007,4 +1291,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ComputationalMovementAnalysis/FS24/edit/main/Week3/4_exercise_C.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ComputationalMovementAnalysis/FS24/edit/main/Week3/4_exercise_C.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div></div></footer></body></html>
