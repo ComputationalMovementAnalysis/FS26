@@ -108,7 +108,7 @@ To submit your exercise, provide us with the URL of the rendered quarto document
 
 ## If you use GitHub...
 
-You can give other GitHub users write access to your repository throught the repository settings. You might want to use this this for your semester project. To practice this, add Evelyn ([\@DLND8](https://github.com/terzev/)) and Nils ([\@ratnanil](https://github.com/ratnanil/)) to your GitHub repo: 
+You can give other GitHub users write access to your repository throught the repository settings. You might want to use this this for your semester project. To practice this, add Evelyn ([\@terzev](https://github.com/terzev/)) and Nils ([\@ratnanil](https://github.com/ratnanil/)) to your GitHub repo: 
 
 1. Go to your GitHub repository on GitHub.com
 2. Go to the repository settings by clicking on the *Settings* tab
